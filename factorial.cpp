@@ -10,7 +10,7 @@ int factorial(int i){
 }
 int main(){
     int entrada;
-    cout << "dame valor para hacer factorial \n";5
+    cout << "dame valor para hacer factorial \n";
     
     cin >> entrada;
     cout << factorial(entrada);
