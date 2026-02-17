@@ -15,12 +15,17 @@ int main(){
     int menor,posmenor,temp;
 
     for(int i=0;i<num-1;i++){
+        //definimos el intervalo a usar para la búsqueda (i->num) y luego pasaremos el
+        // valor encontrado a la posición inicial.
         menor=a[i]; posmenor=i;
+        //Vamos a buscar el menor del intervalo [i -> num]
         for(int j=i+1; j<num; j++){
             if(a[j]<menor){
                 menor=a[j];posmenor=j;
             }
         }
+        //pasamos el valor encontrado como menor en el intervalo [i->num]
+        // a la posición "i"
         temp=a[i];
         a[i]=a[posmenor];
         a[posmenor]=temp;
